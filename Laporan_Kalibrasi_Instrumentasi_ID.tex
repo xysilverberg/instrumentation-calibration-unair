@@ -11,9 +11,7 @@
 
 %======== Bagian Inti ===========
 \newpage
-\begin{multicols}{2}
-    \raggedcolumns
-    \section{PENDAHULUAN}
+\section{PENDAHULUAN}
         \subsection{Latar Belakang}
         Laboratorium Fisika Dasar menerima satu \textit{batch} instrumen dan sensor baru, antara lain neraca digital, jangka sorong, rel udara dengan sensor gerak (gerbang cahaya), osiloskop, dan termometer digital. Ketika \textit{batch} ini digunakan pada eksperimen yang identik oleh beberapa kelompok praktikan, muncul penyimpangan data yang berbeda-beda antar-instrumen. Penyimpangan tersebut dapat berasal dari histeresis dan gesekan mekanis, gangguan lingkungan (\textit{modifying inputs}), \textit{noise} sinyal, efek pembebanan sistem (\textit{loading effect}), atau galat paralaks dan resolusi digital \parencite{Bentley2005}.
 
@@ -38,8 +36,6 @@
 
         \subsection{Profil Instrumen}
         Instrumen yang dievaluasi beserta spesifikasi yang dipakai pada perhitungan dirangkum pada Tabel~\ref{tab:profil}.
-\end{multicols}
-
 %=== Tabel Profil Instrumen (Full Width) ===
 \begin{table}[H]
 \centering
@@ -62,9 +58,7 @@ Kalibrasi & Anak timbangan standar kelas F2 & Massa acuan $x$ (10--300 g) & $u_{
 \end{tabularx}
 \end{table}
 
-\begin{multicols}{2}
-    \raggedcolumns
-    \section{METODE DAN DATA EKSPERIMEN}
+\section{METODE DAN DATA EKSPERIMEN}
         \subsection{Skema dan Prosedur Eksperimen P1 (Massa Jenis)}
         Massa jenis silinder kuningan ditentukan secara tidak langsung dari tiga besaran terukur \parencite{HallidayResnickWalker}:
         \begin{equation}
@@ -81,15 +75,12 @@ Kalibrasi & Anak timbangan standar kelas F2 & Massa acuan $x$ (10--300 g) & $u_{
         \end{equation}
         dan energi mekanik total pada tiap posisi (gravitasi lokal $g=\SI{9,806}{m/s^2}$) adalah \parencite{HallidayResnickWalker}:
         \begin{equation}
-            \begin{aligned}
-                E_1 &= \tfrac{1}{2}Mv_1^{2}+Mg\,\Delta h, \\
-                E_2 &= \tfrac{1}{2}Mv_2^{2},\qquad \Delta E=E_1-E_2.
-            \end{aligned}
+            E_1=\tfrac{1}{2}Mv_1^{2}+Mg\,\Delta h,\qquad
+            E_2=\tfrac{1}{2}Mv_2^{2},\qquad
+            \Delta E=E_1-E_2.
             \label{eq:E}
         \end{equation}
         Jika energi mekanik kekal dan tidak ada disipasi maka $\Delta E=0$. Jika ada gesekan dan hambatan udara maka diharapkan $\Delta E>0$.
-\end{multicols}
-
 %=== Gambar Skema Eksperimen M3 (Full Width) ===
 \begin{figure}[H]
 \centering
@@ -117,17 +108,13 @@ Kalibrasi & Anak timbangan standar kelas F2 & Massa acuan $x$ (10--300 g) & $u_{
 \label{fig:skema}
 \end{figure}
 
-\begin{multicols}{2}
-    \raggedcolumns
-        \subsection{Data Mentah P1 dan M3 (\texorpdfstring{$n=8$}{n=8})}
+\subsection{Data Mentah P1 dan M3 (\texorpdfstring{$n=8$}{n=8})}
         Seluruh data mentah eksperimen P1 (silinder kuningan) dan M3 (rel udara) dicatat tanpa pembulatan awal sebagaimana disajikan pada Tabel~\ref{tab:p1} dan Tabel~\ref{tab:m3}.
 
         \subsection{Penapisan Pencilan Kriteria \texorpdfstring{$3\sigma$}{3 sigma}}
         Suatu data dinyatakan pencilan bila $|x_i-\bar{x}|>3\sigma$ \parencite{Taylor1997}. Hasil penapisan pada semua besaran ditunjukkan pada Tabel~\ref{tab:z}. Seluruh data lolos, sehingga tidak ada data yang dibuang dan $n=8$ dipakai penuh.
 
         Perlu dicatat bahwa untuk sampel kecil, kriteria ini secara matematis tidak dapat menandai pencilan bila $\sigma$ diambil dari sampel itu sendiri. Simpangan standar-terbesar yang mungkin dicapai satu data adalah $(n-1)/\sqrt{n}=7/\sqrt{8}\approx 2{,}47$ simpangan baku sampel, yang selalu lebih kecil dari $3$. Dengan demikian lolosnya semua data bukan bukti kuat bahwa data bebas pencilan. Kebersihan data didukung oleh nilai simpangan baku yang kecil dan tidak adanya nilai yang menyimpang jauh secara visual.
-\end{multicols}
-
 %=== Tabel Data Mentah P1 & M3 (Full Width) ===
 \input{tabel_data_mentah_ID}
 
@@ -154,13 +141,9 @@ Beda tinggi $\Delta h$ & 1,32 & Semua lolos\\
 \end{tabular}
 \end{table}
 
-\begin{multicols}{2}
-    \raggedcolumns
-    \section{ANALISIS KARAKTERISTIK ALAT UKUR}
+\section{ANALISIS KARAKTERISTIK ALAT UKUR}
         \subsection{Rangkuman Parameter Statis dan Dinamis}
         Tabel~\ref{tab:param} merangkum parameter kinerja metrologis yang dapat ditetapkan dari data evaluasi \parencite{JCGM2012VIM,MorrisLangari}. Nilai yang belum diukur langsung diberi keterangan.
-\end{multicols}
-
 %=== Tabel Parameter Performa (Full Width) ===
 \begin{table}[H]
 \centering
@@ -187,9 +170,7 @@ Stabilitas & Statis/Dinamis & \textit{Zero drift} neraca $+\SI{0,03}{g}$ dalam $
 \end{tabularx}
 \end{table}
 
-\begin{multicols}{2}
-    \raggedcolumns
-        \subsection{Karakteristik Statis (Eksperimen P1)}
+\subsection{Karakteristik Statis (Eksperimen P1)}
             \subsubsection{Akurasi dan Galat}
             Dengan $E_m=\bar{m}=\SI{67,22}{g}$ dan $E_o=\SI{67,20}{g}$:
             \begin{align}
@@ -220,8 +201,6 @@ Stabilitas & Statis/Dinamis & \textit{Zero drift} neraca $+\SI{0,03}{g}$ dalam $
 
             \subsubsection{Modifying Inputs}
             Embusan udara dari ventilasi/AC laboratorium memodifikasi gaya hambat aerodinamis pada \textit{glider}, dan kemiringan rel yang tidak persis terkalibrasi mengubah $\Delta h$ efektif. Kedua hal ini bukan galat alat melainkan gangguan lingkungan yang masuk ke \textit{measurand} \parencite{Bentley2005}.
-\end{multicols}
-
 %=== Tabel Zero Drift & Response Delay (Full Width) ===
 \begin{table}[H]
 \centering
@@ -253,9 +232,7 @@ Pembacaan nol (g) & 0.00 & 0.00 & 0.01 & 0.01 & 0.02 & 0.02 & 0.03\\
 \end{tabular}
 \end{table}
 
-\begin{multicols}{2}
-    \raggedcolumns
-    \section{PERHITUNGAN KETIDAKPASTIAN DAN GALAT}
+\section{PERHITUNGAN KETIDAKPASTIAN DAN GALAT}
         \subsection{Formulasi ISO-GUM}
         Evaluasi ketidakpastian standar Tipe A ($\uA$), Tipe B ($\uB$), gabungan ($\uc$), dan bentangan ($U$) mengikuti pedoman ISO-GUM \parencite{JCGM2008GUM}:
         \begin{align}
@@ -281,28 +258,16 @@ Pembacaan nol (g) & 0.00 & 0.00 & 0.01 & 0.01 & 0.02 & 0.02 & 0.03\\
         \subsection{Perambatan ke Massa Jenis \texorpdfstring{$\rho$}{rho}}
         Dari Persamaan~\eqref{eq:rho} diturunkan persamaan perambatan relatif:
         \begin{equation}
-            \begin{split}
-                \frac{\uc(\rho)}{\rho} = \Biggl[
-                    &\left(\frac{\uc(m)}{m}\right)^{2}
-                    + 4\left(\frac{\uc(d)}{d}\right)^{2} \\
-                    &+ \left(\frac{\uc(h)}{h}\right)^{2}
-                \Biggr]^{1/2}.
-            \end{split}
+            \frac{\uc(\rho)}{\rho}=\sqrt{\left(\frac{\uc(m)}{m}\right)^{2}+4\left(\frac{\uc(d)}{d}\right)^{2}+\left(\frac{\uc(h)}{h}\right)^{2}}.
             \label{eq:urho}
         \end{equation}
         Faktor $4$ muncul karena $d$ berpangkat dua. Anggaran ketidakpastian disajikan pada Tabel~\ref{tab:budget}.
 
         Dengan volume $V=\tfrac{\pi}{4}d^2h=\SI{7,9150}{cm^3}$ diperoleh $\rho=\SI{8,4927}{g/cm^3}$, $\uc(\rho)=\SI{0,0175}{g/cm^3}$, dan $U(\rho)=\SI{0,0350}{g/cm^3}$. Hasil akhir adalah:
         \begin{equation}
-            \boxed{
-                \begin{aligned}
-                    \rho &= (8{,}493\pm0{,}035)\ \si{g/cm^3}\ (k=2),\\
-                    \frac{U}{\rho} &= 0{,}41\%.
-                \end{aligned}
-            }
+            \boxed{\rho=(8{,}493\pm0{,}035)\ \si{g/cm^3}\quad(k=2),\qquad \frac{U}{\rho}=0{,}41\%.}
         \end{equation}
         Nilai ini berada dalam rentang massa jenis kuningan yang lazim dilaporkan ($\approx 8{,}4$--$8{,}7\ \si{g/cm^3}$ bergantung komposisi Cu--Zn), sehingga hasil P1 konsisten secara fisis. Namun, ketidakpastian bentangan relatif $0{,}41\%$ terlalu sempit untuk membedakan satu paduan kuningan dari yang lain. Dominasi diameter ($85\%$) menunjukkan bahwa peningkatan kualitas pengukuran paling efektif dilakukan pada $d$: resolusi jangka sorong \SI{0,05}{mm} sudah setara dengan hampir seluruh variasi acak data.
-\end{multicols}
 
 %=== Tabel Ketidakpastian P1 & Anggaran Massa Jenis (Full Width) ===
 \begin{table}[H]
@@ -345,10 +310,8 @@ Tinggi $h$ & 0.00078 & 0.00078 & 14.4\\
 \end{tabular}
 \end{table}
 
-\begin{multicols}{2}
-    \raggedcolumns
-        \subsection{Ketidakpastian Besaran Langsung M3}
-        Evaluasi besaran langsung pada eksperimen M3 terangkum pada Tabel~\ref{tab:uM3}. Kecepatan dihitung dengan Persamaan~\eqref{eq:v}, dan ketidakpastiannya dari $\uc(v)/v=\sqrt{(\uc(w)/w)^2+(\uc(\Delta t)/\Delta t)^2}$:
+\subsection{Ketidakpastian Besaran Langsung M3}
+        Evaluasi besaran langsung pada eksperimen M3 terangkum pada Tabel~\ref{tab:uM3}. Kecepatan dihitung dengan Persamaan~\eqref{eq:v}, dan ketidakpastiannya dari $\uc(v)/v = \bigl[(\uc(w)/w)^2 + (\uc(\Delta t)/\Delta t)^2\bigr]^{1/2}$:
         \begin{align*}
             v_1 &= (0{,}4798\pm0{,}0016)\ \si{m/s},\\
             v_2 &= (0{,}8985\pm0{,}0033)\ \si{m/s}.
@@ -366,7 +329,6 @@ Tinggi $h$ & 0.00078 & 0.00078 & 14.4\\
 
         \subsection{Pembulatan dan Penulisan Akhir}
         Sesuai aturan angka penting ISO-GUM, hasil utama ditulis sebagai $\rho=(8{,}493\pm0{,}035)\ \si{g/cm^3}$ dan $\Delta E=(-2{,}8\pm0{,}6)\times10^{-3}\ \si{J}$.
-\end{multicols}
 
 %=== Tabel Ketidakpastian M3 & Energi (Full Width) ===
 \begin{table}[H]
@@ -407,9 +369,7 @@ $\Delta E=E_1-E_2$ & $(-2{,}79\pm0{,}61)\times10^{-3}\ \si{J}$\\
 \end{tabular}
 \end{table}
 
-\begin{multicols}{2}
-    \raggedcolumns
-    \section{PROSEDUR KALIBRASI DAN VALIDASI}
+\section{PROSEDUR KALIBRASI DAN VALIDASI}
         \subsection{Prosedur Kalibrasi}
         Neraca digital dikalibrasi terhadap anak timbangan standar kelas F2 dengan $u_{\mathrm{std}}\le\SI{0,002}{g}$, yaitu lebih kecil dari resolusi neraca sehingga memenuhi syarat akurasi acuan satu orde lebih baik \parencite{Yhuwana2026}. Dipakai $8$ titik massa standar yang tersebar \SIrange{10}{300}{g} (reduksi $25\%$ dari $10$ titik sesuai ketentuan Group I). Model regresi linier OLS $y=ax+b$ dihitung dengan:
         \begin{equation}
@@ -421,16 +381,9 @@ $\Delta E=E_1-E_2$ & $(-2{,}79\pm0{,}61)\times10^{-3}\ \si{J}$\\
         \subsection{Hasil Regresi}
         Data kalibrasi dan residual ditunjukkan pada Tabel~\ref{tab:cal}. Hasil regresi OLS memberikan:
         \begin{equation}
-            \boxed{
-                \begin{aligned}
-                    y &= 0{,}999975\,x+0{,}0421\ \si{g},\\
-                    R^{2} &= 0{,}99999997.
-                \end{aligned}
-            }
+            \boxed{y=0{,}999975\,x+0{,}0421\ \si{g},\qquad R^{2}=0{,}99999997.}
         \end{equation}
         Galat standar regresi $s_{y/x}=\SI{0,0217}{g}$, dengan ketidakpastian standar kemiringan $u(a)=7{,}6\times10^{-5}$ dan intersep $u(b)=\SI{0,013}{g}$. Kemiringan $a$ berbeda dari $1$ sebesar $2{,}5\times10^{-5}$, yaitu lebih kecil daripada $u(a)$, sehingga \textbf{sensitivitas neraca tidak berbeda nyata dari ideal}. Intersep $b=\SI{0,042}{g}$ sekitar $3{,}3\,u(b)$ dari nol dan sebanding dengan \textit{zero drift} yang tercatat ($\SI{0,03}{g}$), sehingga lebih tepat ditafsirkan sebagai offset nol.
-\end{multicols}
-
 %=== Tabel Kalibrasi OLS (Full Width) ===
 \begin{table}[H]
 \centering
@@ -454,14 +407,10 @@ $\Delta E=E_1-E_2$ & $(-2{,}79\pm0{,}61)\times10^{-3}\ \si{J}$\\
 \end{tabular}
 \end{table}
 
-\begin{multicols}{2}
-    \raggedcolumns
-        \subsection{Analisis Grafik Residual}
+\subsection{Analisis Grafik Residual}
         Gambar~\ref{fig:cal} menyajikan kurva kalibrasi dan Gambar~\ref{fig:res} sebaran residualnya. Residual \emph{tidak} tersebar acak di sekitar nol: tandanya berubah hanya dua kali (tiga \textit{run} dari delapan titik), dengan nilai positif di rentang tengah dan negatif di kedua ujung. Pola ini khas kelengkungan orde dua. Regresi kuadratik $y=c_2x^2+c_1x+c_0$ menurunkan galat standar dari $\SI{0,0217}{g}$ menjadi $\SI{0,0056}{g}$ dengan $c_2=-2{,}3\times10^{-6}\ \si{g^{-1}}$. Dengan demikian, meskipun $R^2=0{,}99999997\approx1$, \textbf{$R^2$ menyembunyikan penyimpangan sistematis non-linier} (sesuai catatan kritis modul \parencite{Yhuwana2026}). Simpangan terbesar $\SI{0,032}{g}$ adalah sekitar tiga kali resolusi neraca.
 
         Galat penguatan $y-x$ juga tidak konstan, yaitu $+\SI{0,02}{g}$ pada \SI{10}{g}, naik ke $+\SI{0,07}{g}$ pada \SI{150}{g}, lalu turun ke $+\SI{0,01}{g}$ pada \SI{300}{g}. Ini memperkuat dugaan non-linieritas sel beban (deformasi elastis non-linier) dan bukan sekadar offset nol.
-\end{multicols}
-
 %=== Grafik Kalibrasi dan Residual (Full Width) ===
 \begin{figure}[H]
 \centering
@@ -506,15 +455,11 @@ $\Delta E=E_1-E_2$ & $(-2{,}79\pm0{,}61)\times10^{-3}\ \si{J}$\\
 \label{fig:res}
 \end{figure}
 
-\begin{multicols}{2}
-    \raggedcolumns
-        \subsection{Lima Uji Validasi}
+\subsection{Lima Uji Validasi}
         Ringkasan lima uji validasi performa instrumen disajikan pada Tabel~\ref{tab:valid}.
 
         \subsection{Koreksi Hasil Pengukuran}
         Jika neraca dipakai tanpa koreksi, massa sejati dapat diperkirakan dari $x=(y-b)/a$. Untuk rentang \SIrange{10}{300}{g} koreksi ini berkisar \SI{0,01}{g} sampai \SI{0,07}{g}, atau lebih besar dari resolusi sehingga layak diterapkan pada pengukuran presisi.
-\end{multicols}
-
 %=== Tabel Lima Uji Validasi (Full Width) ===
 \begin{table}[H]
 \centering
@@ -535,9 +480,7 @@ $\Delta E=E_1-E_2$ & $(-2{,}79\pm0{,}61)\times10^{-3}\ \si{J}$\\
 \end{tabularx}
 \end{table}
 
-\begin{multicols}{2}
-    \raggedcolumns
-    \section{DISKUSI REFLEKTIF DAN INTEGRASI}
+\section{DISKUSI REFLEKTIF DAN INTEGRASI}
         \subsection{Analisis ``So What?'' Eksperimen P1}
         Hasil $\rho=(8{,}493\pm0{,}035)\ \si{g/cm^3}$ konsisten dengan kuningan, dan ketidakpastian relatifnya $0{,}41\%$. Implikasinya, pengukuran ini layak untuk mengidentifikasi bahan sebagai kuningan (bukan tembaga murni atau aluminium), tetapi tidak cukup untuk menentukan rasio Cu--Zn. Karena $85\%$ varians berasal dari diameter, mengganti jangka sorong (\SI{0,05}{mm}) dengan mikrometer sekrup (\SI{0,01}{mm}) menurunkan $U(\rho)$ dari $\SI{0,035}{g/cm^3}$ menjadi sekitar $\SI{0,026}{g/cm^3}$ (perkiraan dengan hanya $d$ diganti). Perbaikan sebanding pada $h$ membawanya ke sekitar $\SI{0,024}{g/cm^3}$. Perbaikan ini jauh lebih efektif daripada menambah jumlah pengulangan massa.
 
@@ -582,10 +525,7 @@ $\Delta E=E_1-E_2$ & $(-2{,}79\pm0{,}61)\times10^{-3}\ \si{J}$\\
     \section{DAFTAR PUSTAKA}
     \printbibliography[heading=none]
 
-\end{multicols}
-
 %======= Bagian Lampiran ===============
-\onecolumn
     \newpage
     \begin{center}
         \section{LAMPIRAN}

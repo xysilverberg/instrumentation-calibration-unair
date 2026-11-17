@@ -23,9 +23,7 @@
 
 %======== Main Body ===========
 \newpage
-\begin{multicols}{2}
-    \raggedcolumns
-    \section{INTRODUCTION}
+\section{INTRODUCTION}
         \subsection{Background}
         The Basic Physics Laboratory received a new batch of instruments and sensors, including digital balances, vernier calipers, an air track equipped with motion sensors (photogates), oscilloscopes, and digital thermometers. When this batch was deployed across identical experiments by multiple student teams, distinct inter-instrument data deviations emerged. Such deviations may originate from mechanical hysteresis and friction, environmental disturbances (\textit{modifying inputs}), signal \textit{noise}, system \textit{loading effects}, or parallax and digital resolution errors \parencite{Bentley2005}.
 
@@ -50,8 +48,6 @@
 
         \subsection{Instrument Specifications}
         The evaluated instruments and specifications used in the calculations are summarized in Table~\ref{tab:profil}.
-\end{multicols}
-
 %=== Instrument Profile Table (Full Width) ===
 \begin{table}[H]
 \centering
@@ -74,9 +70,7 @@ Calibration & Class F2 standard weights & Reference mass $x$ (10--300 g) & $u_{\
 \end{tabularx}
 \end{table}
 
-\begin{multicols}{2}
-    \raggedcolumns
-    \section{EXPERIMENTAL METHODS AND DATA}
+\section{EXPERIMENTAL METHODS AND DATA}
         \subsection{Setup and Procedure for P1 (Density)}
         The density of the brass cylinder is determined indirectly from three measured quantities \parencite{HallidayResnickWalker}:
         \begin{equation}
@@ -93,15 +87,12 @@ Calibration & Class F2 standard weights & Reference mass $x$ (10--300 g) & $u_{\
         \end{equation}
         and total mechanical energy at each gate (local gravity $g=\SI{9.806}{m/s^2}$) is \parencite{HallidayResnickWalker}:
         \begin{equation}
-            \begin{aligned}
-                E_1 &= \tfrac{1}{2}Mv_1^{2}+Mg\,\Delta h, \\
-                E_2 &= \tfrac{1}{2}Mv_2^{2},\qquad \Delta E=E_1-E_2.
-            \end{aligned}
+            E_1=\tfrac{1}{2}Mv_1^{2}+Mg\,\Delta h,\qquad
+            E_2=\tfrac{1}{2}Mv_2^{2},\qquad
+            \Delta E=E_1-E_2.
             \label{eq:E}
         \end{equation}
         Under ideal conservative motion $\Delta E=0$, whereas friction and air drag should yield $\Delta E>0$.
-\end{multicols}
-
 %=== Experiment M3 Schematic (Full Width) ===
 \begin{figure}[H]
 \centering
@@ -129,17 +120,13 @@ Calibration & Class F2 standard weights & Reference mass $x$ (10--300 g) & $u_{\
 \label{fig:skema}
 \end{figure}
 
-\begin{multicols}{2}
-    \raggedcolumns
-        \subsection{Raw Datasets for P1 and M3 (\texorpdfstring{$n=8$}{n=8})}
+\subsection{Raw Datasets for P1 and M3 (\texorpdfstring{$n=8$}{n=8})}
         All raw observations for P1 (brass cylinder) and M3 (air track) were recorded without initial rounding, as listed in Table~\ref{tab:p1} and Table~\ref{tab:m3}.
 
         \subsection{Outlier Screening via \texorpdfstring{$3\sigma$}{3 sigma} Criterion}
         A data point is flagged as an outlier if $|x_i-\bar{x}|>3\sigma$ \parencite{Taylor1997}. Screening results across all quantities are given in Table~\ref{tab:z}. Every observation passed, so all $n=8$ trials were retained.
 
         Notably, for small samples, this criterion cannot mathematically flag an outlier when $\sigma$ is estimated from the sample itself. The maximum possible standardized deviation is $(n-1)/\sqrt{n}=7/\sqrt{8}\approx 2.47$ sample standard deviations, which is strictly below $3$. Passing all points is therefore not conclusive proof of outlier-free data; rather, data integrity is supported by the small standard deviations and visual consistency.
-\end{multicols}
-
 %=== Raw Data Tables (Full Width) ===
 \input{tabel_data_mentah_EN}
 
@@ -166,13 +153,9 @@ Elevation $\Delta h$ & 1.32 & All pass\\
 \end{tabular}
 \end{table}
 
-\begin{multicols}{2}
-    \raggedcolumns
-    \section{INSTRUMENT CHARACTERISTIC ANALYSIS}
+\section{INSTRUMENT CHARACTERISTIC ANALYSIS}
         \subsection{Summary of Static and Dynamic Parameters}
         Table~\ref{tab:param} summarizes the metrological performance metrics determined from the evaluation data \parencite{JCGM2012VIM,MorrisLangari}. Unmeasured datasheet assumptions are explicitly noted.
-\end{multicols}
-
 %=== Metrological Performance Summary Table (Full Width) ===
 \begin{table}[H]
 \centering
@@ -199,9 +182,7 @@ Stability & Static/Dynamic & Balance \textit{zero drift} $+\SI{0.03}{g}$ over $3
 \end{tabularx}
 \end{table}
 
-\begin{multicols}{2}
-    \raggedcolumns
-        \subsection{Static Characteristics (Experiment P1)}
+\subsection{Static Characteristics (Experiment P1)}
             \subsubsection{Accuracy and Error}
             With $E_m=\bar{m}=\SI{67.22}{g}$ and reference $E_o=\SI{67.20}{g}$:
             \begin{align}
@@ -232,8 +213,6 @@ Stability & Static/Dynamic & Balance \textit{zero drift} $+\SI{0.03}{g}$ over $3
 
             \subsubsection{Modifying Inputs}
             Air currents from laboratory HVAC vents alter aerodynamic drag on the \textit{glider}, while slight track-level non-uniformity modifies the effective $\Delta h$. Both represent environmental \textit{modifying inputs} rather than intrinsic sensor defects \parencite{Bentley2005}.
-\end{multicols}
-
 %=== Zero Drift & Delay Tables (Full Width) ===
 \begin{table}[H]
 \centering
@@ -265,9 +244,7 @@ Zero reading (g) & 0.00 & 0.00 & 0.01 & 0.01 & 0.02 & 0.02 & 0.03\\
 \end{tabular}
 \end{table}
 
-\begin{multicols}{2}
-    \raggedcolumns
-    \section{UNCERTAINTY AND ERROR PROPAGATION}
+\section{UNCERTAINTY AND ERROR PROPAGATION}
         \subsection{ISO-GUM Formulation}
         Type~A ($\uA$), Type~B ($\uB$), combined ($\uc$), and expanded ($U$) uncertainties follow ISO-GUM standards \parencite{JCGM2008GUM}:
         \begin{align}
@@ -293,29 +270,16 @@ Zero reading (g) & 0.00 & 0.00 & 0.01 & 0.01 & 0.02 & 0.02 & 0.03\\
         \subsection{Propagation to Brass Density \texorpdfstring{$\rho$}{rho}}
         From Equation~\eqref{eq:rho}, the relative combined uncertainty is:
         \begin{equation}
-            \begin{split}
-                \frac{\uc(\rho)}{\rho} = \Biggl[
-                    &\left(\frac{\uc(m)}{m}\right)^{2}
-                    + 4\left(\frac{\uc(d)}{d}\right)^{2} \\
-                    &+ \left(\frac{\uc(h)}{h}\right)^{2}
-                \Biggr]^{1/2}.
-            \end{split}
+            \frac{\uc(\rho)}{\rho}=\sqrt{\left(\frac{\uc(m)}{m}\right)^{2}+4\left(\frac{\uc(d)}{d}\right)^{2}+\left(\frac{\uc(h)}{h}\right)^{2}}.
             \label{eq:urho}
         \end{equation}
         The factor of $4$ arises from $d^2$ in the denominator. The uncertainty budget is detailed in Table~\ref{tab:budget}.
 
         With cylinder volume $V=\tfrac{\pi}{4}d^2h=\SI{7.9150}{cm^3}$, we obtain $\rho=\SI{8.4927}{g/cm^3}$, $\uc(\rho)=\SI{0.0175}{g/cm^3}$, and $U(\rho)=\SI{0.0350}{g/cm^3}$:
         \begin{equation}
-            \boxed{
-                \begin{aligned}
-                    \rho &= (8.493\pm0.035)\ \si{g/cm^3}\ (k=2),\\
-                    \frac{U}{\rho} &= 0.41\%.
-                \end{aligned}
-            }
+            \boxed{\rho=(8.493\pm0.035)\ \si{g/cm^3}\quad(k=2),\qquad \frac{U}{\rho}=0.41\%.}
         \end{equation}
         This matches standard brass densities ($\approx 8.4\text{--}8.7\ \si{g/cm^3}$ depending on Cu--Zn ratio), though a $0.41\%$ relative band cannot distinguish specific brass alloys. Because diameter contributes $85\%$ of variance, replacing the vernier caliper (\SI{0.05}{mm}) with a micrometer (\SI{0.01}{mm}) is the highest-impact upgrade.
-\end{multicols}
-
 %=== P1 Uncertainty & Budget Tables (Full Width) ===
 \begin{table}[H]
 \centering
@@ -357,9 +321,7 @@ Height $h$ & 0.00078 & 0.00078 & 14.4\\
 \end{tabular}
 \end{table}
 
-\begin{multicols}{2}
-    \raggedcolumns
-        \subsection{Direct Measurand Uncertainties in M3}
+\subsection{Direct Measurand Uncertainties in M3}
         Direct measurand uncertainties for M3 are given in Table~\ref{tab:uM3}. Velocities from Equation~\eqref{eq:v} with $\uc(v)/v=\sqrt{(\uc(w)/w)^2+(\uc(\Delta t)/\Delta t)^2}$ are:
         \begin{align*}
             v_1 &= (0.4798\pm0.0016)\ \si{m/s},\\
@@ -378,8 +340,6 @@ Height $h$ & 0.00078 & 0.00078 & 14.4\\
 
         \subsection{Final Reporting and Significant Figures}
         Following ISO-GUM rules, the final reported results are $\rho=(8.493\pm0.035)\ \si{g/cm^3}$ and $\Delta E=(-2.8\pm0.6)\times10^{-3}\ \si{J}$.
-\end{multicols}
-
 %=== M3 Uncertainty & Energy Tables (Full Width) ===
 \begin{table}[H]
 \centering
@@ -419,9 +379,7 @@ $\Delta E=E_1-E_2$ & $(-2.79\pm0.61)\times10^{-3}\ \si{J}$\\
 \end{tabular}
 \end{table}
 
-\begin{multicols}{2}
-    \raggedcolumns
-    \section{CALIBRATION PROCEDURE AND VALIDATION}
+\section{CALIBRATION PROCEDURE AND VALIDATION}
         \subsection{Calibration Procedure}
         The digital balance was calibrated against Class F2 reference weights ($u_{\mathrm{std}}\le\SI{0.002}{g}$), providing reference accuracy one order better than balance resolution \parencite{Yhuwana2026}. Eight reference points spanning \SIrange{10}{300}{g} were measured and modeled via OLS linear regression $y=ax+b$:
         \begin{equation}
@@ -433,16 +391,9 @@ $\Delta E=E_1-E_2$ & $(-2.79\pm0.61)\times10^{-3}\ \si{J}$\\
         \subsection{Regression Results}
         Calibration points and residuals are tabulated in Table~\ref{tab:cal}. The OLS fit gives:
         \begin{equation}
-            \boxed{
-                \begin{aligned}
-                    y &= 0.999975\,x+0.0421\ \si{g},\\
-                    R^{2} &= 0.99999997.
-                \end{aligned}
-            }
+            \boxed{y=0.999975\,x+0.0421\ \si{g},\qquad R^{2}=0.99999997.}
         \end{equation}
         The standard error of regression is $s_{y/x}=\SI{0.0217}{g}$, with slope uncertainty $u(a)=7.6\times10^{-5}$ and intercept uncertainty $u(b)=\SI{0.013}{g}$. Since $|a-1|=2.5\times10^{-5}<u(a)$, \textbf{balance sensitivity does not differ significantly from unity}. Intercept $b=\SI{0.042}{g}$ ($\approx 3.3\,u(b)$) matches the observed \textit{zero drift} (\SI{0.03}{g}), consistent with a zero-offset bias.
-\end{multicols}
-
 %=== OLS Calibration Table (Full Width) ===
 \begin{table}[H]
 \centering
@@ -466,14 +417,10 @@ $\Delta E=E_1-E_2$ & $(-2.79\pm0.61)\times10^{-3}\ \si{J}$\\
 \end{tabular}
 \end{table}
 
-\begin{multicols}{2}
-    \raggedcolumns
-        \subsection{Residual Plot Analysis}
+\subsection{Residual Plot Analysis}
         Figure~\ref{fig:cal} shows the calibration curve and Figure~\ref{fig:res} displays its residuals. Residuals are \emph{not} randomly scattered around zero: signs switch only twice (three runs across eight points), positive in the middle range and negative at both extremes. A quadratic fit $y=c_2x^2+c_1x+c_0$ reduces the standard error from $\SI{0.0217}{g}$ to $\SI{0.0056}{g}$ with $c_2=-2.3\times10^{-6}\ \si{g^{-1}}$. Thus, even with $R^2=0.99999997\approx1$, \textbf{$R^2$ conceals systematic non-linear curvature} \parencite{Yhuwana2026}. The peak residual of $\SI{0.032}{g}$ is roughly three times the balance resolution.
 
         Gain error $y-x$ also varies non-uniformly ($+\SI{0.02}{g}$ at \SI{10}{g}, peaking at $+\SI{0.07}{g}$ at \SI{150}{g}, and dropping to $+\SI{0.01}{g}$ at \SI{300}{g}), reinforcing subtle elastic non-linearity in the load cell rather than a pure zero offset.
-\end{multicols}
-
 %=== Calibration and Residual Figures (Full Width) ===
 \begin{figure}[H]
 \centering
@@ -518,15 +465,11 @@ $\Delta E=E_1-E_2$ & $(-2.79\pm0.61)\times10^{-3}\ \si{J}$\\
 \label{fig:res}
 \end{figure}
 
-\begin{multicols}{2}
-    \raggedcolumns
-        \subsection{Five Validation Tests}
+\subsection{Five Validation Tests}
         A summary of the five instrument performance validation tests is presented in Table~\ref{tab:valid}.
 
         \subsection{Measurement Correction}
         When using the balance uncalibrated, true mass can be estimated via $x=(y-b)/a$. Across \SIrange{10}{300}{g}, this correction ranges from \SI{0.01}{g} to \SI{0.07}{g}—exceeding instrument resolution and warranted for precision work.
-\end{multicols}
-
 %=== Five Validation Tests Table (Full Width) ===
 \begin{table}[H]
 \centering
@@ -547,9 +490,7 @@ $\Delta E=E_1-E_2$ & $(-2.79\pm0.61)\times10^{-3}\ \si{J}$\\
 \end{tabularx}
 \end{table}
 
-\begin{multicols}{2}
-    \raggedcolumns
-    \section{REFLECTIVE DISCUSSION AND INTEGRATION}
+\section{REFLECTIVE DISCUSSION AND INTEGRATION}
         \subsection{``So What?'' Analysis for Experiment P1}
         The result $\rho=(8.493\pm0.035)\ \si{g/cm^3}$ ($0.41\%$ relative uncertainty) reliably identifies the specimen as brass rather than pure copper or aluminum, though it cannot resolve exact Cu--Zn alloy grades. Since $85\%$ of variance originates from diameter, upgrading from a vernier caliper (\SI{0.05}{mm}) to a micrometer screw gauge (\SI{0.01}{mm}) reduces $U(\rho)$ from $\SI{0.035}{g/cm^3}$ to roughly $\SI{0.026}{g/cm^3}$ (changing $d$ alone), and to $\approx\SI{0.024}{g/cm^3}$ when applied to both $d$ and $h$—far more effective than adding mass repetitions.
 
@@ -594,10 +535,7 @@ $\Delta E=E_1-E_2$ & $(-2.79\pm0.61)\times10^{-3}\ \si{J}$\\
     \section{REFERENCES}
     \printbibliography[heading=none]
 
-\end{multicols}
-
 %======= Appendices ===============
-\onecolumn
     \newpage
     \begin{center}
         \section{APPENDICES}
