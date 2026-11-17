@@ -1,22 +1,26 @@
 \documentclass[a4paper, 12pt]{article}
 \input{preamble}
+\hypersetup{
+    pdftitle={Laporan Kalibrasi Instrumentasi dan Evaluasi Metrologis - Universitas Airlangga},
+    pdfauthor={Group I - Departemen Fisika UNAIR}
+}
 
 \begin{document}
-    \include{Cover}
-    \include{Abstract}
+    \include{Cover_ID}
+    \include{Abstract_ID}
 
 %======== Bagian Inti ===========
 \newpage
 \begin{multicols}{2}
     \raggedcolumns
     \section{PENDAHULUAN}
-        \subsection{Latar Belakang Audit}
+        \subsection{Latar Belakang}
         Laboratorium Fisika Dasar menerima satu \textit{batch} instrumen dan sensor baru, antara lain neraca digital, jangka sorong, rel udara dengan sensor gerak (gerbang cahaya), osiloskop, dan termometer digital. Ketika \textit{batch} ini digunakan pada eksperimen yang identik oleh beberapa kelompok praktikan, muncul penyimpangan data yang berbeda-beda antar-instrumen. Penyimpangan tersebut dapat berasal dari histeresis dan gesekan mekanis, gangguan lingkungan (\textit{modifying inputs}), \textit{noise} sinyal, efek pembebanan sistem (\textit{loading effect}), atau galat paralaks dan resolusi digital \parencite{Bentley2005}.
 
-        Dalam kondisi tersebut kelompok ditunjuk sebagai Auditor Instrumentasi Muda. Tugasnya adalah menentukan apakah penyimpangan berasal dari cacat internal instrumen, kesalahan kalibrasi, \textit{loading effect}, gangguan lingkungan, atau ketidakpastian acak \parencite{WinarnoYhuwana}. Group I mendapat pasangan eksperimen \textbf{P1 (\textit{Density})} dan \textbf{M3 (\textit{Energy})} dengan fokus pada data statis dan dinamis serta respon sensor gerak. Karena kelompok beranggotakan tiga orang, jumlah pengulangan dikurangi $25\%$ menjadi $n=8$ per besaran, tanpa mengurangi kedalaman analisis.
+        Dalam kondisi tersebut kelompok ditunjuk sebagai Tim Evaluasi dan Kalibrasi Instrumentasi. Tugasnya adalah menentukan apakah penyimpangan berasal dari cacat internal instrumen, kesalahan kalibrasi, \textit{loading effect}, gangguan lingkungan, atau ketidakpastian acak \parencite{WinarnoYhuwana}. Group I mendapat pasangan eksperimen \textbf{P1 (\textit{Density})} dan \textbf{M3 (\textit{Energy})} dengan fokus pada data statis dan dinamis serta respon sensor gerak. Karena kelompok beranggotakan tiga orang, jumlah pengulangan dikurangi $25\%$ menjadi $n=8$ per besaran, tanpa mengurangi kedalaman analisis.
 
         \subsection{Rumusan Masalah}
-        Rumusan masalah audit ini adalah sebagai berikut:
+        Rumusan masalah evaluasi ini adalah sebagai berikut:
         \begin{enumerate}
             \item Bagaimana karakteristik statis dan dinamis instrumen yang digunakan pada eksperimen P1 dan M3?
             \item Bagaimana hasil kalibrasi neraca digital terhadap massa standar dan apakah sebaran residualnya menunjukkan linearitas yang sebenarnya?
@@ -24,23 +28,23 @@
             \item Bagaimana dampak keterbatasan instrumen terhadap kesimpulan ilmiah mengenai massa jenis dan hukum kekekalan energi mekanik?
         \end{enumerate}
 
-        \subsection{Tujuan Audit}
+        \subsection{Tujuan Evaluasi}
         \begin{enumerate}
             \item Memetakan parameter kinerja instrumen: \textit{measurand}, \textit{range}, resolusi, sensitivitas, akurasi, presisi, \textit{repeatability}, linearitas, \textit{response time}, stabilitas, dan \textit{noise} \parencite{JCGM2012VIM}.
             \item Menjalankan kalibrasi terstruktur terhadap standar acuan, memodelkan regresi $y=ax+b$, dan mengevaluasi grafik residual.
             \item Menghitung $\uA$, $\uB$, $\uc$, dan $U$ ($k=2$, tingkat kepercayaan sekitar $95\%$) serta menerapkan aturan angka penting sesuai ISO-GUM \parencite{JCGM2008GUM}.
-            \item Menyusun analisis reflektif \textit{``so what?''} dan rekomendasi audit.
+            \item Menyusun analisis reflektif \textit{``so what?''} dan rekomendasi kalibrasi teknis.
         \end{enumerate}
 
         \subsection{Profil Instrumen}
-        Instrumen yang diaudit beserta spesifikasi yang dipakai pada perhitungan dirangkum pada Tabel~\ref{tab:profil}.
+        Instrumen yang dievaluasi beserta spesifikasi yang dipakai pada perhitungan dirangkum pada Tabel~\ref{tab:profil}.
 \end{multicols}
 
 %=== Tabel Profil Instrumen (Full Width) ===
 \begin{table}[H]
 \centering
 \singlespacing
-\caption{Profil instrumen yang diaudit (Group I).}
+\caption{Profil instrumen yang dievaluasi (Group I).}
 \label{tab:profil}
 \small
 \begin{tabularx}{\textwidth}{@{}l l X l@{}}
@@ -124,8 +128,8 @@ Kalibrasi & Anak timbangan standar kelas F2 & Massa acuan $x$ (10--300 g) & $u_{
         Perlu dicatat bahwa untuk sampel kecil, kriteria ini secara matematis tidak dapat menandai pencilan bila $\sigma$ diambil dari sampel itu sendiri. Simpangan standar-terbesar yang mungkin dicapai satu data adalah $(n-1)/\sqrt{n}=7/\sqrt{8}\approx 2{,}47$ simpangan baku sampel, yang selalu lebih kecil dari $3$. Dengan demikian lolosnya semua data bukan bukti kuat bahwa data bebas pencilan. Kebersihan data didukung oleh nilai simpangan baku yang kecil dan tidak adanya nilai yang menyimpang jauh secara visual.
 \end{multicols}
 
-%=== Tabel Data Mentah P1 & M3 (Full Width, modular dari tabel_data_mentah.tex) ===
-\input{tabel_data_mentah}
+%=== Tabel Data Mentah P1 & M3 (Full Width) ===
+\input{tabel_data_mentah_ID}
 
 %=== Tabel Simpangan Z-max (Full Width) ===
 \begin{table}[H]
@@ -154,7 +158,7 @@ Beda tinggi $\Delta h$ & 1,32 & Semua lolos\\
     \raggedcolumns
     \section{ANALISIS KARAKTERISTIK ALAT UKUR}
         \subsection{Rangkuman Parameter Statis dan Dinamis}
-        Tabel~\ref{tab:param} merangkum parameter kinerja metrologis yang dapat ditetapkan dari data audit \parencite{JCGM2012VIM,MorrisLangari}. Nilai yang belum diukur langsung diberi keterangan.
+        Tabel~\ref{tab:param} merangkum parameter kinerja metrologis yang dapat ditetapkan dari data evaluasi \parencite{JCGM2012VIM,MorrisLangari}. Nilai yang belum diukur langsung diberi keterangan.
 \end{multicols}
 
 %=== Tabel Parameter Performa (Full Width) ===
@@ -166,7 +170,7 @@ Beda tinggi $\Delta h$ & 1,32 & Semua lolos\\
 \small
 \begin{tabularx}{\textwidth}{@{}l l X@{}}
 \toprule
-\textbf{Parameter} & \textbf{Kategori} & \textbf{Hasil audit}\\
+\textbf{Parameter} & \textbf{Kategori} & \textbf{Hasil evaluasi}\\
 \midrule
 \textit{Measurand} & Statis/Dinamis & Massa (g), panjang (mm), waktu interupsi (s)\\
 \textit{Range} & Statis & Neraca \SIrange{0}{500}{g}; jangka sorong \SIrange{0}{150}{mm}\\
@@ -565,7 +569,7 @@ $\Delta E=E_1-E_2$ & $(-2{,}79\pm0{,}61)\times10^{-3}\ \si{J}$\\
             \item Galat dinamis sistematis lebih sulit dideteksi daripada galat statis acak, dan hanya dapat diatasi dengan kalibrasi dan koreksi, bukan dengan menambah pengulangan.
         \end{enumerate}
 
-        \subsection{Rekomendasi Audit}
+        \subsection{Rekomendasi Teknis}
         \begin{enumerate}
             \item \textbf{Ukur $\tau$ gerbang cahaya} dengan osiloskop dan sumber pulsa optik berpresisi mikrodetik, lalu terapkan koreksi $\Delta t_{\mathrm{sejati}}=\Delta t_{\mathrm{ukur}}+\tau$ di perangkat lunak pengolah data.
             \item \textbf{Gunakan mikrometer sekrup} untuk $d$ dan $h$ pada P1 guna menurunkan kontribusi dominan ketidakpastian $\rho$.
@@ -634,9 +638,13 @@ residual   : =C5-D5
     \end{table}
 
     \subsection*{Lampiran C: Ringkasan Skrip Python}
-    \noindent Perhitungan dilakukan dengan \texttt{numpy}, \texttt{pandas}, \texttt{scipy}, dan \texttt{sympy} (turunan parsial simbolik untuk Persamaan~\eqref{eq:prop}), lalu diekspor ke Excel tiga tab dengan \texttt{openpyxl}. Kode lengkap tersedia pada berkas \texttt{Audit\_Metrologi\_Group\_I.ipynb} dan hasil workbook pada \texttt{Audit\_Instrumentasi\_Group\_I.xlsx}.
+    \noindent Perhitungan dilakukan dengan \texttt{numpy}, \texttt{pandas}, \texttt{scipy}, dan \texttt{sympy} (turunan parsial simbolik untuk Persamaan~\eqref{eq:prop}), lalu diekspor ke Excel tiga tab dengan \texttt{openpyxl}. Berkas lengkap tersedia pada:
+    \begin{itemize}
+        \item Notebook: \texttt{Instrumentation\_Calibration\_Analysis.ipynb}
+        \item Workbook: \texttt{Instrumentation\_Calibration\_Data.xlsx}
+    \end{itemize}
 
-    \subsection*{Lampiran D: Ringkasan Hasil Akhir Audit}
+    \subsection*{Lampiran D: Ringkasan Hasil Akhir Evaluasi}
     \begin{table}[H]
     \centering
     \singlespacing
