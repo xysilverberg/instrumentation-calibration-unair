@@ -1,0 +1,130 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[top=2.5cm, bottom=2.5cm, left=3cm, right=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{nopageno}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{url}
+\IfFileExists{newtxtext.sty}{%
+    \usepackage{newtxtext,newtxmath}%
+}{%
+    \usepackage{mathptmx}%
+}
+\usepackage{multicol}
+\usepackage[labelsep=period,skip=4pt]{caption}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{siunitx}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{hyperref}
+
+\pgfplotsset{compat=1.16}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\sisetup{
+    output-decimal-marker={,},
+    group-separator={.},
+    group-digits=integer,
+    range-phrase={--},
+    range-units=single,
+    detect-all,
+    per-mode=symbol
+}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=black,
+    hypertexnames=false,
+    pdftitle={Laporan Audit Instrumentasi Group I - FIT310},
+    pdfauthor={Group I}
+}
+
+% 1. Paragraph & spacing setting (Template O2)
+\linespread{1.25}
+\setlength{\parindent}{0.8cm}
+\setstretch{1.25}
+\setlength{\columnsep}{10pt}
+\setlength{\parskip}{0pt}
+
+\setlength{\textfloatsep}{6pt}
+\setlength{\intextsep}{6pt}
+\setlength{\floatsep}{6pt}
+
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+\titlespacing*{\subsection}{0pt}{0.4em}{0.2em}
+\titlespacing*{\subsubsection}{0pt}{0.3em}{0.15em}
+
+\setlist[enumerate]{
+    itemsep=2pt,
+    parsep=0pt,
+    topsep=0pt,
+    partopsep=0pt
+}
+\setlist[itemize]{
+    itemsep=2pt,
+    parsep=0pt,
+    topsep=0pt,
+    partopsep=0pt
+}
+
+% 2. Figure and Table Setting
+\renewcommand{\figurename}{Gambar}
+\renewcommand{\tablename}{Tabel}
+
+% 3. Pengaturan Section (Polosan, tanpa huruf/nomor) - Template O2
+\renewcommand{\thesection}{}
+\titleformat{\section}
+{\normalfont\bfseries}{}{0pt}{}
+
+% 4. Pengaturan Subsection (Format: a. Judul) - Template O2
+\renewcommand{\thesubsection}{\alph{subsection}.}
+\titleformat{\subsection}
+{\normalfont\bfseries}{\thesubsection}{0.5em}{}
+
+\renewcommand{\thesubsubsection}{}
+\titleformat{\subsubsection}
+{\normalfont\bfseries}{}{0pt}{}
+
+% 5. Listing kode untuk Lampiran
+\lstset{
+    basicstyle=\ttfamily\footnotesize,
+    breaklines=true,
+    frame=single,
+    columns=fullflexible,
+    keepspaces=true,
+    showstringspaces=false,
+    xleftmargin=0.2cm
+}
+
+% 6. Makro metrologi
+\newcommand{\uc}{u_{c}}
+\newcommand{\uA}{u_{A}}
+\newcommand{\uB}{u_{B}}
+\newcommand{\dd}{\mathrm{d}}
+
+% 7. Pustaka / Bibliografi (Template O2)
+\usepackage{csquotes}
+\IfFileExists{biblatex.sty}{%
+    \usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+    \DeclareLanguageMapping{american}{american-apa}
+    \addbibresource{Pustaka.bib}
+    \setlength{\bibitemsep}{0.0\baselineskip}
+}{%
+    \usepackage[numbers,sort&compress]{natbib}
+    \bibliographystyle{apalike}
+    \renewcommand{\bibsection}{}
+    \setlength{\bibsep}{2pt}
+    \newcommand{\printbibliography}[1][]{\footnotesize\bibliography{Pustaka}}
+    \providecommand{\parencite}{\citep}
+}
