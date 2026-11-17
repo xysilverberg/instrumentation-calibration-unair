@@ -109,4 +109,4 @@ Developed at the **Department of Physics, Faculty of Science and Technology, Uni
 - **Muhammad Abiyu Khansa** (`182241036`)
 - **Farras Atha Pandita** (`182241040`)
 - **Hendra Maulana** (`182241043`)
-- Supervised by **Winarno, S.Si., M.T.** and **Yhosep Gita Yhun Yhuwana, S.Si., M.T.**
+- Supervised by **Yhosep Gita Yhun Yhuwana, S.Si., M.T.**

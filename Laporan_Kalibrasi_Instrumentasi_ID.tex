@@ -17,7 +17,7 @@
         \subsection{Latar Belakang}
         Laboratorium Fisika Dasar menerima satu \textit{batch} instrumen dan sensor baru, antara lain neraca digital, jangka sorong, rel udara dengan sensor gerak (gerbang cahaya), osiloskop, dan termometer digital. Ketika \textit{batch} ini digunakan pada eksperimen yang identik oleh beberapa kelompok praktikan, muncul penyimpangan data yang berbeda-beda antar-instrumen. Penyimpangan tersebut dapat berasal dari histeresis dan gesekan mekanis, gangguan lingkungan (\textit{modifying inputs}), \textit{noise} sinyal, efek pembebanan sistem (\textit{loading effect}), atau galat paralaks dan resolusi digital \parencite{Bentley2005}.
 
-        Dalam kondisi tersebut kelompok ditunjuk sebagai Tim Evaluasi dan Kalibrasi Instrumentasi. Tugasnya adalah menentukan apakah penyimpangan berasal dari cacat internal instrumen, kesalahan kalibrasi, \textit{loading effect}, gangguan lingkungan, atau ketidakpastian acak \parencite{WinarnoYhuwana}. Group I mendapat pasangan eksperimen \textbf{P1 (\textit{Density})} dan \textbf{M3 (\textit{Energy})} dengan fokus pada data statis dan dinamis serta respon sensor gerak. Karena kelompok beranggotakan tiga orang, jumlah pengulangan dikurangi $25\%$ menjadi $n=8$ per besaran, tanpa mengurangi kedalaman analisis.
+        Dalam kondisi tersebut kelompok ditunjuk sebagai Tim Evaluasi dan Kalibrasi Instrumentasi. Tugasnya adalah menentukan apakah penyimpangan berasal dari cacat internal instrumen, kesalahan kalibrasi, \textit{loading effect}, gangguan lingkungan, atau ketidakpastian acak \parencite{Yhuwana2026}. Group I mendapat pasangan eksperimen \textbf{P1 (\textit{Density})} dan \textbf{M3 (\textit{Energy})} dengan fokus pada data statis dan dinamis serta respon sensor gerak. Karena kelompok beranggotakan tiga orang, jumlah pengulangan dikurangi $25\%$ menjadi $n=8$ per besaran, tanpa mengurangi kedalaman analisis.
 
         \subsection{Rumusan Masalah}
         Rumusan masalah evaluasi ini adalah sebagai berikut:
@@ -411,7 +411,7 @@ $\Delta E=E_1-E_2$ & $(-2{,}79\pm0{,}61)\times10^{-3}\ \si{J}$\\
     \raggedcolumns
     \section{PROSEDUR KALIBRASI DAN VALIDASI}
         \subsection{Prosedur Kalibrasi}
-        Neraca digital dikalibrasi terhadap anak timbangan standar kelas F2 dengan $u_{\mathrm{std}}\le\SI{0,002}{g}$, yaitu lebih kecil dari resolusi neraca sehingga memenuhi syarat akurasi acuan satu orde lebih baik \parencite{WinarnoYhuwana}. Dipakai $8$ titik massa standar yang tersebar \SIrange{10}{300}{g} (reduksi $25\%$ dari $10$ titik sesuai ketentuan Group I). Model regresi linier OLS $y=ax+b$ dihitung dengan:
+        Neraca digital dikalibrasi terhadap anak timbangan standar kelas F2 dengan $u_{\mathrm{std}}\le\SI{0,002}{g}$, yaitu lebih kecil dari resolusi neraca sehingga memenuhi syarat akurasi acuan satu orde lebih baik \parencite{Yhuwana2026}. Dipakai $8$ titik massa standar yang tersebar \SIrange{10}{300}{g} (reduksi $25\%$ dari $10$ titik sesuai ketentuan Group I). Model regresi linier OLS $y=ax+b$ dihitung dengan:
         \begin{equation}
             a=\frac{n\sum x_iy_i-\sum x_i\sum y_i}{n\sum x_i^{2}-\left(\sum x_i\right)^{2}},\quad
             b=\frac{\sum y_i-a\sum x_i}{n}.
@@ -457,7 +457,7 @@ $\Delta E=E_1-E_2$ & $(-2{,}79\pm0{,}61)\times10^{-3}\ \si{J}$\\
 \begin{multicols}{2}
     \raggedcolumns
         \subsection{Analisis Grafik Residual}
-        Gambar~\ref{fig:cal} menyajikan kurva kalibrasi dan Gambar~\ref{fig:res} sebaran residualnya. Residual \emph{tidak} tersebar acak di sekitar nol: tandanya berubah hanya dua kali (tiga \textit{run} dari delapan titik), dengan nilai positif di rentang tengah dan negatif di kedua ujung. Pola ini khas kelengkungan orde dua. Regresi kuadratik $y=c_2x^2+c_1x+c_0$ menurunkan galat standar dari $\SI{0,0217}{g}$ menjadi $\SI{0,0056}{g}$ dengan $c_2=-2{,}3\times10^{-6}\ \si{g^{-1}}$. Dengan demikian, meskipun $R^2=0{,}99999997\approx1$, \textbf{$R^2$ menyembunyikan penyimpangan sistematis non-linier} (sesuai catatan kritis modul \parencite{WinarnoYhuwana}). Simpangan terbesar $\SI{0,032}{g}$ adalah sekitar tiga kali resolusi neraca.
+        Gambar~\ref{fig:cal} menyajikan kurva kalibrasi dan Gambar~\ref{fig:res} sebaran residualnya. Residual \emph{tidak} tersebar acak di sekitar nol: tandanya berubah hanya dua kali (tiga \textit{run} dari delapan titik), dengan nilai positif di rentang tengah dan negatif di kedua ujung. Pola ini khas kelengkungan orde dua. Regresi kuadratik $y=c_2x^2+c_1x+c_0$ menurunkan galat standar dari $\SI{0,0217}{g}$ menjadi $\SI{0,0056}{g}$ dengan $c_2=-2{,}3\times10^{-6}\ \si{g^{-1}}$. Dengan demikian, meskipun $R^2=0{,}99999997\approx1$, \textbf{$R^2$ menyembunyikan penyimpangan sistematis non-linier} (sesuai catatan kritis modul \parencite{Yhuwana2026}). Simpangan terbesar $\SI{0,032}{g}$ adalah sekitar tiga kali resolusi neraca.
 
         Galat penguatan $y-x$ juga tidak konstan, yaitu $+\SI{0,02}{g}$ pada \SI{10}{g}, naik ke $+\SI{0,07}{g}$ pada \SI{150}{g}, lalu turun ke $+\SI{0,01}{g}$ pada \SI{300}{g}. Ini memperkuat dugaan non-linieritas sel beban (deformasi elastis non-linier) dan bukan sekadar offset nol.
 \end{multicols}

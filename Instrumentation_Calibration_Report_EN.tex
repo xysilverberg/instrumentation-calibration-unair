@@ -29,7 +29,7 @@
         \subsection{Background}
         The Basic Physics Laboratory received a new batch of instruments and sensors, including digital balances, vernier calipers, an air track equipped with motion sensors (photogates), oscilloscopes, and digital thermometers. When this batch was deployed across identical experiments by multiple student teams, distinct inter-instrument data deviations emerged. Such deviations may originate from mechanical hysteresis and friction, environmental disturbances (\textit{modifying inputs}), signal \textit{noise}, system \textit{loading effects}, or parallax and digital resolution errors \parencite{Bentley2005}.
 
-        Under these conditions, our team served as the Instrumentation Calibration and Evaluation Team. The objective was to determine whether observed deviations stem from internal instrument defects, calibration errors, \textit{loading effects}, environmental disturbances, or random uncertainty \parencite{WinarnoYhuwana}. Group~I was assigned the paired experiments \textbf{P1 (\textit{Density})} and \textbf{M3 (\textit{Energy})}, focusing on static and dynamic measurement characteristics as well as motion sensor response. Because the group consists of three members, the number of repetitions was reduced by $25\%$ to $n=8$ per measurand without compromising analytical depth.
+        Under these conditions, our team served as the Instrumentation Calibration and Evaluation Team. The objective was to determine whether observed deviations stem from internal instrument defects, calibration errors, \textit{loading effects}, environmental disturbances, or random uncertainty \parencite{Yhuwana2026}. Group~I was assigned the paired experiments \textbf{P1 (\textit{Density})} and \textbf{M3 (\textit{Energy})}, focusing on static and dynamic measurement characteristics as well as motion sensor response. Because the group consists of three members, the number of repetitions was reduced by $25\%$ to $n=8$ per measurand without compromising analytical depth.
 
         \subsection{Problem Statements}
         The evaluation addresses four core questions:
@@ -423,7 +423,7 @@ $\Delta E=E_1-E_2$ & $(-2.79\pm0.61)\times10^{-3}\ \si{J}$\\
     \raggedcolumns
     \section{CALIBRATION PROCEDURE AND VALIDATION}
         \subsection{Calibration Procedure}
-        The digital balance was calibrated against Class F2 reference weights ($u_{\mathrm{std}}\le\SI{0.002}{g}$), providing reference accuracy one order better than balance resolution \parencite{WinarnoYhuwana}. Eight reference points spanning \SIrange{10}{300}{g} were measured and modeled via OLS linear regression $y=ax+b$:
+        The digital balance was calibrated against Class F2 reference weights ($u_{\mathrm{std}}\le\SI{0.002}{g}$), providing reference accuracy one order better than balance resolution \parencite{Yhuwana2026}. Eight reference points spanning \SIrange{10}{300}{g} were measured and modeled via OLS linear regression $y=ax+b$:
         \begin{equation}
             a=\frac{n\sum x_iy_i-\sum x_i\sum y_i}{n\sum x_i^{2}-\left(\sum x_i\right)^{2}},\quad
             b=\frac{\sum y_i-a\sum x_i}{n}.
@@ -469,7 +469,7 @@ $\Delta E=E_1-E_2$ & $(-2.79\pm0.61)\times10^{-3}\ \si{J}$\\
 \begin{multicols}{2}
     \raggedcolumns
         \subsection{Residual Plot Analysis}
-        Figure~\ref{fig:cal} shows the calibration curve and Figure~\ref{fig:res} displays its residuals. Residuals are \emph{not} randomly scattered around zero: signs switch only twice (three runs across eight points), positive in the middle range and negative at both extremes. A quadratic fit $y=c_2x^2+c_1x+c_0$ reduces the standard error from $\SI{0.0217}{g}$ to $\SI{0.0056}{g}$ with $c_2=-2.3\times10^{-6}\ \si{g^{-1}}$. Thus, even with $R^2=0.99999997\approx1$, \textbf{$R^2$ conceals systematic non-linear curvature} \parencite{WinarnoYhuwana}. The peak residual of $\SI{0.032}{g}$ is roughly three times the balance resolution.
+        Figure~\ref{fig:cal} shows the calibration curve and Figure~\ref{fig:res} displays its residuals. Residuals are \emph{not} randomly scattered around zero: signs switch only twice (three runs across eight points), positive in the middle range and negative at both extremes. A quadratic fit $y=c_2x^2+c_1x+c_0$ reduces the standard error from $\SI{0.0217}{g}$ to $\SI{0.0056}{g}$ with $c_2=-2.3\times10^{-6}\ \si{g^{-1}}$. Thus, even with $R^2=0.99999997\approx1$, \textbf{$R^2$ conceals systematic non-linear curvature} \parencite{Yhuwana2026}. The peak residual of $\SI{0.032}{g}$ is roughly three times the balance resolution.
 
         Gain error $y-x$ also varies non-uniformly ($+\SI{0.02}{g}$ at \SI{10}{g}, peaking at $+\SI{0.07}{g}$ at \SI{150}{g}, and dropping to $+\SI{0.01}{g}$ at \SI{300}{g}), reinforcing subtle elastic non-linearity in the load cell rather than a pure zero offset.
 \end{multicols}
